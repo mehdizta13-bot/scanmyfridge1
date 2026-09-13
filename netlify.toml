@@ -1,0 +1,18 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/public/scan"
+  to = "/.netlify/functions/scan"
+  status = 200
+
+[[redirects]]
+  from = "/api/public/stripe-status"
+  to = "/.netlify/functions/stripe-status"
+  status = 200
+
+[[redirects]]
+  from = "/api/public/stripe-checkout"
+  to = "/.netlify/functions/stripe-checkout"
+  status = 200
